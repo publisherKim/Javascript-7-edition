@@ -33,7 +33,7 @@
 - This book treats ES5 as the compatibility baseline and no longer discusses eariler versions of the lanuage. 
     - 이책은 ES5를 호환성 기준으로써 다루고 더이상 언어의 초기 버전에 대해서 토론하지 않을 것이다.
 - ES6 was released in 2015 and added major new features including class and module syntax that changed JavaScript from scripting language into a serious, general-purpose language suitable for large scale software engineering.
-    - ES6는 2015년에 배포 되었고 중요한 새로ㅇ운 특징들은 추가 되었어, 클래스와 모듈 syntax등을 포함하여 이러한 것들이 자바스크립트를 스크립팅 언어에서 진지하게 일반적인 목적의 언어에 적합한 소프트웨어 엔지니어를 위해 변화되었어.
+    - ES6는 2015년에 배포 되었고 중요한 새로운 특징들은 추가 되었어, 클래스와 모듈 syntax등을 포함하여 이러한 것들이 자바스크립트를 스크립팅 언어에서 진지하게 일반적인 목적의 언어에 적합한 소프트웨어 엔지니어를 위해 변화되었어.
 - Since ES6, the ECMAScript specification has moved to a yearly release cadence, and versions of the language ES2016, ES2017, ES2018, ES2019, and ES2020 are now idetified by year of relaease.
     - ES6 이후로, ECMAScript는 사양은 해마다 배포 되고 언어의 버전들은 ES2016, ES2017, ES2018, ES2019, and ES2020 해마다 배포함으로써 식별되어졌어.
 - As, JavaSCript evolved, the language designers attempted to correct flaws in the early (pre-ES5) versions.
