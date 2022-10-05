@@ -55,3 +55,28 @@
 </pre>
 - To be useful, every language must have a platform, or standard library, for performing things like basic input and output.
     - 유용하기 위해서, 모든 언어들은 플랫폼을 또는 표준화된 라이브러리 가지고 있어, 수행을 위한 것들 마치 기본적인 입력 과 출력 
+- The core JavaScript language defines a minimal API for working with numbers, text, arrays, sets, maps, and so on, but does not include any input or output functionality.
+    - 자바스크립트 언어 코어에는 최소한의 API들만 numbers, text, arrays, sets, maps, 기타등등이 함께 작동을 위해 정의 되어져 있지만 입력과 출력이라는 기능은 전현 포함 되어져 있지 않았다.
+- Inpuit and output(as well as more sophisticated features, such as networking, storage, and graphics) are the responsibility of the "host environment" within which JavaScript is embedded.
+    - 입력과 출력은(정교한 특징으로써 networking, storage, 그리고 graphics 등) 자바스크립트에 포함된 host environment의 책임이다.
+- The original host environment for JavaScript was a web browser, and this is still the most common execution environment for JavaSCript code.
+    - 자바스크립트의 근본적인 host environment은 웹 브라우져 였고 이것은 여전히 자바스크립트 코드를 위해 가장 흔한 실행 환경이다.
+- The web browser environment allows JavaScript code to obtain input from the user's mouse and keyboard and by making HTTP requests.
+    - 이 웹브라우져의 환경은 자바스크립트 코드가 입력을 얻기 위해 사용자의 마우스와 키보드 그리고 HTTP 요청을 만드는 것을 허용한다.
+- And it allows JavsScript code to display output to the user with HTML and CSS.
+    - 그리고 이것은 자바스크크립트 코드가 출력을 유저에게 HTML과 CSS를 함께 전시하는것을 허용한다.
+- Since 2010, another host environment has been avaiable for JavaScript code.
+    - 2010년 이후로, 또다른 host environment가 자바스크립트 코드를 위해 이용 가능해 졌다.
+-  Insetead of constraining JavaScript to work with the APIs provided by web browser, Node gives JavsScript access to the entire operating system, allowing JavaSCript programs to read and write files, send and receive data over the network, and serve HTTP requests.
+    -  자바스크립트를 구속하는 대신에 API들과 함꼐 작동하기 위해서 웹 브라우져는 제공 되어졌고, Node는 완벽한 작동 체계로 자바스크립트를 접근하게 해줬고, 자바스크립트 프로그램들에게 파일들을 일고 쓰게 해 주었고, 네트워크 위로 데이터를 주고 받고 HTTP 요청을 제곻 해 주었다.
+- Node is a popular choice for implementing web servers and also a convenient tool for writing simple utility scripts as an alternative to shell scripts.
+    - 노드는 웹서버들을 구현하기 위해 인기 있는 선택이고  또한  shell scripts를 대처할 간단하고 유용한 스크립트들을 쓰기 위한 편리한 도구 이다.
+
+- Most of this book is focused on the JavsSCript language itself.
+    - 이 책은 대부분은 자바스크립스 언어 스스로에 초점 되어져 있다.
+- Chapter 11 documents the JavaScript standard library,
+    - Chapter 11 문서들과 자바스크립트 표준 library,
+- Chapter 15 introdouces the web browser hos environment, and
+    - Chapter 15 소개 이 웹 브라우저 host environment, 그리고
+- Chapter 16 introduces the Node host environment.
+    - Chapter 16 the Node host environment 소개.
