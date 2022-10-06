@@ -80,3 +80,57 @@
     - Chapter 15 소개 이 웹 브라우저 host environment, 그리고
 - Chapter 16 introduces the Node host environment.
     - Chapter 16 the Node host environment 소개.
+
+- This book covers low-level fundamentals frist, and then builds on those to more advanced and high-level abstractions.
+    - 이 책은 처음에는 낮은 수준의 기능들로 덮여져 있고 그다음으로는 이런한 것들에서 더많이 발전하고 높은수중의 추상화를 세운다.
+- The chapters are intended to be read more or less in order.
+    - 챕터들은 더 많이 순서대로 읽거나 덜 읽는 경향이 있다.
+- But learning a new programming language is never a linear process, and describing a language is not linear either: each language feature is related to other features, and this book is full of cross-references sometimes backward and sometiemes forward to related material.
+    - 그러나 새로운 프로그래밍 언어를 배우는것은 결코 가벼운 과정은 아니고 언어를 설명하는 것 역시 결코 가볍지 않다.
+    - 각 언어의 특징은 다른 특징과 연관성이 있고 이 책은 교차 레퍼런스들로 가득차서 때로는 뒤로 때로는 앞으로 가며 연광성을 파악해야 한다.
+- This introductory chapter makes a quick first pass through the language, introducing key features that will make it easier to understand the in-depth treatment in the chapters that follow.
+    - 이 소개 챕터는 이 언어를 빠르게 패스 하게 만들며, 주요 기능 소개는 챕터들에 따르는 깊이 있는 다룸을 이해하는데 좀더 쉽게 만들어 줄 것이다.
+- If you are already a practiong JavaSCript prgrammer, you can probably skip this chapter.
+    - 만약 니가 이마 자바스크립트 프로그래머로써 수행하고 있다면, 너는 아마도 이 챕터를 넘어가도 될수 있다..
+- (Although you might enjoy reading Example 1-1 at the end of the chapter before you move on.)
+    - 비록 니가 이 장의 끝 부분에 있는 예제 1-1 을 읽을 것을 즐겨 할 지 몰라도, 니가 이동하기 전에.
+
+## 1.1 Exploring JavaScript: 자바스크립트 탐색
+- When learning a new programming language, it's important to try the examples in the book, then modify then and try them again to test your understanding of the language.
+    - 새로운 프로그래밍 언어를 배우는 중이라면, 책의 예제들을 시도하는 것은 중요하고, 다음으로 그것들에 관하여 테스트하고 시도하는 것이 너의 이 언어를 이해하는데 좋을거야.
+- To do that, you need a JavsScript interpreter.
+    - 그렇게 해라, 너는 자바스크립트 인터프리터가 필요하다.
+- The easiest way to try out a few lines of JavaScript is to open up the web developer tools in your web browser (with F12, Ctrl-Shift-I, or Command-Oprion-I) and select the Console tab.
+    - 가장 쉬운 방법은 웹 브라우저의(F12, Ctrl-Shift-I, or Command-Oprion-I와 함께, ) 개발자도구들을 열고 몇줄의 자바스크립트 줄을 시도해 보는거야 그리고 Console tab을 선택하는 것도.
+- You can then type code at the prompt and see the results as you type.
+    - 너는 그러면 프로프트에 코드를 쓰고  네가 쓴 결과를 볼수 있어.
+- Browser developer tools often appear as panes at the bottom or right of the browser winodw, but you can usually detach them as separtat windows(as pictured in Figure 1-1), which is often quite convenient.
+    - 브라우저 개발자 도구는 종종 판으로써 웹브라우저 창의 바닥 또는 오른쪽에 나타나지만, 너는 이것들을 창과 분리해서(사진 1-1 처럼) 떼어 낼 수 있어 이것은 종종 꽤 편리한 방법이야.
+<center>- Figure 101. The JavaScript console in Firefox's Developer Tools</center>
+- Another way to try out JavaScript code is to download and install Node from https://nodejs.org.
+    - 또 다른 방법으로는 자바스립트 코드를 다운로드 받고 https://nodejs.org.로 부터 Node를 인스톨 하는 거야.
+- Once Node is installed on your system, you can simply open a Terminal window and type node to begin an interactive JavaScript session like this one:
+    - Node의 설치는 너의 시스템에 한 번 하게 되면, 간단히 윈도우 터미널에서 열 수 있고 node라고 쓰면 JavaSCript session 다음과 같이 시작 될거야.
+<code>
+$node
+Welcome to Node.js v12.13.0.
+Type ".help" for more information.
+> .help
+.break Sometimes you get stuck, this gets you out
+.cleear Alias for .break
+.editor Enter editor mode
+.exit Exit the repl
+.help Print this help message
+.load Load JS from a file into the REPL session
+.save Save all evaluated commands in this REPL session to a file
+
+press ^C to abort current expression, ^D to exit the repl
+> let x = 2, y = 3;
+undefined
+> x + y 
+5
+> (x === 2) && (y === 3)
+true
+> (x > 3) || (y < 3)
+false
+</code>
